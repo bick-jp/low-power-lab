@@ -1,0 +1,42 @@
+.wrapper {
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(80ch, 100%)
+    1fr;
+}
+
+.wrapper > * {
+  grid-column: 2;
+}
+
+header {
+  height: 60px;
+  margin: 0;
+}
+
+header p {
+	line-height: 60px;
+  text-align: center;
+}
+
+footer {
+	height: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.cards {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 33%;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    flex: 100%;
+  }
+}
