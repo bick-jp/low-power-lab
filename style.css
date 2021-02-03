@@ -35,6 +35,19 @@ footer {
   flex: 33%;
 }
 
+.card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.card .description {
+  font-weight: bold;
+  margin: 1em 0 0 0;
+}
+
+
 @media screen and (max-width: 480px) {
   .card {
     flex: 100%;
